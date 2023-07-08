@@ -46,9 +46,9 @@ pipeline {
         stage('error') {
           steps {
             sh '''pwd
-cd /var/lib/jenkins/workspace/dhtechlab/
 
-sh uptime.sh'''
+
+'''
           }
         }
 
