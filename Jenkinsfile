@@ -43,9 +43,9 @@ pipeline {
           }
         }
 
-        stage('error') {
+        stage('uptime') {
           steps {
-            sh '''pwd
+            sh '''sh /var/lib/jenkins/workspace/testblueocean_main/uptime.sh
 
 
 '''
