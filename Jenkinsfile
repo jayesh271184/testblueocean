@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('Stage2') {
+      steps {
+        git(url: 'https://github.com/jayesh271184/dhtechlab.git', branch: 'main')
+      }
+    }
+
   }
 }
