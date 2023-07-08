@@ -9,7 +9,13 @@ pipeline {
 
     stage('Stage2') {
       steps {
-        git(url: 'https://github.com/jayesh271184/dhtechlab.git', branch: 'main')
+        git(url: 'https://github.com/jayesh271184/dhtechlab.git', branch: 'shell', changelog: true)
+      }
+    }
+
+    stage('RunScript') {
+      steps {
+        sh 'sh FileCount.sh'
       }
     }
 
